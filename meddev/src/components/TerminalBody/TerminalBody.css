@@ -1,0 +1,26 @@
+.terminal-body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.terminal-line {
+  margin-bottom: 10px;
+}
+
+.prompt {
+  color: #00ff00;
+  margin-right: 5px;
+}
+
+.cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #33ff33;
+  }
+}

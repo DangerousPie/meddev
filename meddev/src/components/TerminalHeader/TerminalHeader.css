@@ -1,0 +1,10 @@
+.terminal-header {
+  border-bottom: 1px solid #33ff33;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.terminal-title {
+  color: #00ffcc;
+  font-weight: bold;
+}

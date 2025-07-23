@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import TerminalHeader from './components/TerminalHeader/TerminalHeader';
+import TerminalBody from './components/TerminalBody/TerminalBody';
 
 function App() {
+  const [command, setCommand] = useState('show-skills');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="terminal">
+        <TerminalHeader />
+        <TerminalBody command={command} />
+      </div>
     </div>
   );
 }
