@@ -21,3 +21,35 @@ body {
   background-color: #000;
   border-radius: 8px;
 }
+
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.terminal {
+  width: 100%;
+  max-width: 900px;
+  border: 2px solid #33ff33;
+  padding: 20px;
+  box-shadow: 0 0 15px #33ff33;
+  background-color: #000;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .terminal {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .hacker-logo {
+    font-size: 8px;
+  }
+}
